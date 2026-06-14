@@ -65,8 +65,13 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <link rel="dns-prefetch" href="//api.fontshare.com" />
-        <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="anonymous" />
+        <link
+          rel="preload"
+          href="/fonts/Satoshi-Variable.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
 
         <link
           rel="preload"
