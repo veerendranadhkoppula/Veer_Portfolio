@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import React from 'react'
-import './styles.css'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Veerendranadh Koppula | Full-Stack Engineer — Web & App Development',
@@ -64,6 +64,25 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
 
   return (
     <html lang="en">
+      <head>
+        <link rel="dns-prefetch" href="//api.fontshare.com" />
+        <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="anonymous" />
+
+        <link
+          rel="preload"
+          href="/fonts/PPHatton-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/modernline-personal-use.bold.otf"
+          as="font"
+          type="font/otf"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>
         <main>{children}</main>
       </body>

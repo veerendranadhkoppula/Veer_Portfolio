@@ -1,0 +1,38 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap');
+
+@font-face {
+  font-family: 'PP Hatton';
+  src: url('/fonts/PPHatton-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Modernline';
+  src: url('/fonts/modernline-personal-use.bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --font-display: 'PP Hatton', Georgia, serif;
+  --font-accent: 'Modernline', cursive;
+  --font-body: 'Satoshi', sans-serif;
+
+  --color-bg: #f5f5f5;
+  --color-text: #222;
+  --color-accent: #0070f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
